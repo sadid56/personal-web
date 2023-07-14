@@ -1,0 +1,304 @@
+body{
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header part styles */
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 150px;
+    
+}
+span{
+    color: blue;
+}
+nav .nav-title{
+    font-size: 30px;
+}
+.nav-title::first-letter{
+    border: 2px solid blue;
+    border-right: transparent;
+    font-family: serif;
+    font-size: 40px;
+    color: red;
+}
+nav > ul{
+    display: flex;
+    align-items: center;
+}
+nav li{
+    list-style: none;
+    margin-right: 35px;
+   
+}
+nav li a{
+    text-decoration: none;
+}
+.btn-primary{
+    background-color: navy;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 30px;
+    border: none;
+}
+.btn-primary:hover{
+    box-shadow: 5px 5px 10px navy;
+    transition: all ease-in .20s;
+}
+#outline-btn{
+    background-color: transparent;
+    color: black;
+    border: 1px solid navy;
+}
+#outline-btn:hover{
+    background-color: navy;
+    color: #fff;
+    box-shadow: none;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px;
+    margin-top: 60px;
+}
+ .hero-img img{
+width: 300px;
+height: 300px;
+border-radius: 50%;
+margin-right: 60px;
+
+}
+.hero-text h3{
+    word-spacing: 8px;
+    letter-spacing: 2px;
+    font-size: 25px;
+    color: rgb(60, 54, 54);
+   
+}
+.hero-text h1{
+    color: black;
+    font-size: 45px;
+    margin-top: 5px;
+}
+.hero-text p{
+    color:  rgb(179, 171, 171);
+    margin-bottom: 30px;
+   
+}
+.hero-text i{
+    padding-right: 10px;
+}
+.header{
+    background-color: rgb(248, 248, 232);
+    height: 100vh;
+    background-image: url(img/images__1_-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: right ;
+    background-size: 660px;
+    
+}
+  /* header part end */
+
+  /* main part styles */
+main{
+    max-width: 100vw;
+ 
+}
+main section{
+    margin-top: 130px;
+}
+
+  .about{
+    margin: 130px 0;
+    padding: 130px;
+    background-color: aliceblue;
+  }
+  .about-title{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .about-description{
+    text-align: center;
+    font-size: 18px;
+    margin: 100px 0;
+  }
+  .about-info-container{
+    display: flex;
+    justify-content: space-around;
+  }
+  .about-info{
+    text-align: center;
+  
+}
+#what-i-do-description{
+    padding: 30px 150px;
+    text-align: center;
+}
+
+.skils-container{
+    display: flex;
+    gap: 25px;
+    text-align: start;
+    
+}
+.skil img{
+    width: 50px;
+}
+.skil{
+    padding: 30px;
+    box-shadow: 1px 5px 10px rgb(212, 205, 205);
+    width: 30%;
+}
+.skil:hover{
+    transform: scaleX(.25s);
+    box-shadow: 1px 5px 10px gray;
+}
+.skil-description{
+    color: gray;
+}
+
+/* resume item style */
+.resume-container{
+    display: flex;
+    gap: 50px;
+    
+    /* padding: 30px; */
+    margin-top: 20px;
+}
+.resume-column{
+    box-shadow: 1px 5px 10px rgb(166, 156, 156);
+    padding: 50px;
+    width: 50%;
+}
+.resume-container hr{
+    margin: 30px;
+}
+
+.resume-item-descrioption{
+    color: rgb(206, 199, 199);
+}
+.resume-item-isntitute{
+    color: rgb(65, 64, 64);
+}
+.resume-item-title{
+    margin-top:20px;
+    margin-bottom: 0px;
+}
+.btn{
+    text-align: center;
+    margin: 30px 0;
+}
+.btn button i{
+    padding-right: 10px;
+}
+
+/* main part end */
+
+/* footer part start */
+
+.footer{
+    height: 350px;
+    background-color: beige;
+    display: flex;
+    padding: 130px 150px;
+    margin-top: 50px;
+    gap: 100px;
+}
+.contact input, textarea{
+    display: block;
+    margin-bottom: 25px;
+    padding: 10px 100px;
+    border: 0;
+}
+.footer .footer-column1 , .footer-column2{
+    width: 50%;
+}
+.footer-icon a > i{
+    color: hotpink;
+    padding-right: 10px;
+}
+.footer-icon a > i:hover{
+    color: navy;
+}
+#last-footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: fit-content;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+
+/* finished */
+
+/* media screen style */
+@media screen and (max-width:576px) {
+     .hero , nav > ul, .about, .about-info-container, .skils-container{
+        flex-direction: column;
+    }
+    .hero-img{
+        display: none;
+    }
+    .header{
+       background-image: none;
+      height: fit-content;
+    }
+    nav{
+        
+        flex-direction: column;
+        align-items: center;
+       justify-content: center;
+        
+    }
+    nav  ul li{
+        margin-top: 10px;
+    }
+    .hero-text{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+       
+    }
+    .btn-primary{
+        margin-bottom: 10px;
+    }
+    .hero{
+        margin-top: 10px;
+        align-items: center;}
+  .about{
+    margin-top: 10px;
+    padding: 40px;
+    align-items: center;
+  }
+  
+#what-i-do-description{
+    padding: 40px;
+}   
+.skils-container{
+    align-items: center;
+}
+    .skil{
+        width: 70%;
+    }
+    .resume-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer{
+        flex-direction: column;
+        height: fit-content;
+        padding: 50px;
+    }
+    .contact input, textarea{
+        width: 50%;
+        align-items: center;
+    }
+  
+  
+
+}
